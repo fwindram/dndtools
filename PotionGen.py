@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # PotionGen.py
 # Francis Windram
 # 16/01/18
