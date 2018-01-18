@@ -338,14 +338,20 @@ def potiongen():
 
 
 def main(argv):
-    pass
+    potionlist = []
+    print("Generating {} potions.".format(argv.n))
+    for i in range(argv.n):
+        potionlist.append(potiongen())
+    for potion in potionlist:
+        print("\n{}\n\n".format(potion))
 
 
 if __name__ == '__main__':
     status = 0
     # Set up arguments
     parser = argparse.ArgumentParser(description='''Generate random potions for DnD 5e.''')
-    parser.add_argument("n", type=int, nargs="?", default=1)   # Add optional argument
+    parser.add_argument("n", type=int, nargs="?", choices=range(11), default=1,
+                        help="Number of potions to generate.")   # Add optional argument
     args = parser.parse_args()
 
     # Run potion generation
