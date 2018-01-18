@@ -157,7 +157,7 @@ colour_l = [
 appearance_l = [
     "flecks of colour", "swirls of colour", "fizzing bubbles", "bubbles suspended in it",
     "some kind of bone floating in it", "leaves and flowers in it", "two separating liquids", "a bright glow",
-    "a soft glow", "stripes of colour", "a certain translucency", "a butty murkiness", "blood within it",
+    "a soft glow", "stripes of colour", "a certain translucency", "a cloudy murkiness", "blood within it",
     "dirt floating in it", "chunks of metal in it", "some type of gore from a slain creature", "steam coming from it",
     "a face in the liquid", "constantly moving and shifting liquid", "a constant heat"
 ]
