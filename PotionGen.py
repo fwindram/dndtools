@@ -11,6 +11,8 @@
 #
 
 import random
+import sys
+import argparse
 
 # Source lists (could split out to separate area)
 titles_l = ["Potion", "Elixir", "Draught", "Vial", "Philter", "Tonic", "Brew", "Ichor", "Juice", "Concoction"]
@@ -334,7 +336,20 @@ def potiongen():
     workingpotion.seed = seed_list
     return workingpotion
 
-mypotion = potiongen()
-print(repr(mypotion))
-print()
-print(mypotion)
+
+def main(argv):
+    pass
+
+
+if __name__ == '__main__':
+    status = 0
+    # Set up arguments
+    parser = argparse.ArgumentParser(description='''Generate random potions for DnD 5e.''')
+    parser.add_argument("n", type=int, nargs="?", default=1)   # Add optional argument
+    args = parser.parse_args()
+
+    # Run potion generation
+    main(args)
+
+    # Exit
+    sys.exit(status)
